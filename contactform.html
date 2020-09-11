@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Nanum+Pen+Script&family=Rancho&family=Henny+Penny&family=Kaushan+Script&display=swap"
+  rel="stylesheet">
+
+  <title>Login / SignUp</title>
+</head>
+
+<body>
+  <section id="contact-section1">
+    <header>
+      <div class="navbar">
+          <div class="logo">
+              Resto</div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="index.html#ABOUT">About</a></li>
+              <li><a href="index.html#MENU">Menu</a></li>
+              <li><a href="index.html#book">Reservations</a></li>
+              <li><a href="index.html#feedBack">FeedBack</a></li>
+          </ul>
+      </div>
+  </header>
+  <div id="alertmessage"><p></p></div>
+    <div class="container">
+      <div class="container1">
+        <h2>Login</h2>
+        <form>
+          <input id="input1" type="text" placeholder="Name">
+          <input id="input2" type="text" placeholder="Last Name"><br>
+          <input id="input3" type="Email" placeholder="Email"><br>
+          <input id="input4" type="text" placeholder="Password"><br>
+          <input type="button" value="Login" onclick="func()" class="submit">
+          <p class="or">OR</p>
+          <div class="footer1">
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+          <hr>
+        </form>
+        <div class="signup" onclick="changeform()"><a href="#contact-section2">Already having account (Click here)</a></div>
+      </div>
+    </div>
+    
+  </section>
+  <script src="js/form.js"></script>
+</body> 
