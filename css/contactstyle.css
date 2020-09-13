@@ -1,0 +1,320 @@
+
+   body{
+    padding: 0px;
+    margin: 0px; 
+   }   
+
+
+ .container{
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+  .container1{
+    height: 70%;
+    text-align: center;
+    margin: 3.6% 20%;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../images/kimzy-nanney-LNDgBERq8Q0-unsplash.jpg);  
+    background-size: cover;
+    background-position: center;
+    padding: 3%;
+  }
+
+  .container12{
+    border: 2px solid white;
+    height: 70%;
+    text-align: center;
+    margin: 3.6% 20%;
+    background-size: cover;
+    background-position: center;
+    padding: 3% 0;
+  }
+
+
+    #contact-section1{
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(../images/kimzy-nanney-LNDgBERq8Q0-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 120vh;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+
+    
+
+    #contact-section1 .container h2{
+      text-align: center;
+        text-underline-position: under;
+        color: rgb(238, 235, 235);
+        letter-spacing: 2px;
+    }
+
+    
+
+    #contact-section1 .container p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+       margin-right: auto; 
+       padding-bottom: 3%;
+       color: #fff;
+       letter-spacing:3px;
+    }
+
+    .contact-form1 i.fa{
+      font-size: 22px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 80%;
+      /* margin: 2%; */
+      cursor: pointer;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+    }
+    
+    .contact-form1 i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }
+
+      
+.form-info{
+  font-size: 16px;
+  font-style: italic;
+        color: white;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 10px;
+        margin:10px;
+        width: 50%;
+        background-color:rgba(136, 133, 133, 0.5);
+        color: white;
+        border: none;
+        outline:none;
+      }
+
+      input::placeholder{
+        color: white;
+      }
+    
+      .submit{
+      width: 35%;
+      background: none;
+      padding: 4px;
+      outline: none;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 33px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-top: 3%;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+     }
+
+     .submit:hover{
+           border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+     }
+
+    @media (max-width: 768px){
+
+ #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      #contact-section .submit{
+        width: 52%;
+      }
+
+  }
+
+  .or{
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  hr{
+    margin-top: 2%;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .footer1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: lightseagreen;
+  }
+
+  .signup{
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+  }
+
+.signup a{
+  text-decoration: none;
+  color: rgb(221, 134, 62);
+}
+
+.sign1{
+  display: none;
+}
+
+
+header{
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.navbar{
+display: flex;
+height: 80px;
+width: 85%;
+background: none;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px 0 80px;
+flex-wrap: wrap;
+}
+
+.logo{
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Henny Penny', cursive;
+  padding: 10px;
+  margin: 2%;
+  font-size: 60px;
+}
+
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+
+
+.navbar ul li{
+  margin: 0 5px;
+}
+
+
+.navbar ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+
+.navbar .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+
+input[type="checkbox"]{
+  display: none;
+}
+
+
+
+@media (max-width: 1200px) {
+  .navbar .menu-btn i{
+  display: block;
+}
+
+
+.navbar ul{
+    position: fixed;
+    top: 80px;
+    right: 100%;
+    margin-left: 70%;
+    background: #111;
+    height: 100vh;
+    width: 30%;
+    text-align: center;
+    display: block;
+}
+
+
+#click:checked ~ ul{
+    left: 0;
+}
+
+
+.navbar ul li{
+    width: 100%;
+    margin: 40px 0;
+}
+
+
+.navbar ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+}
+
+
+#click:checked ~ ul li a{
+    margin-left: 0px;
+}
+  
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: none;
+    color: orange;
+  }
+}
+
+.navbar input:hover{
+  border: 2.5px solid white;
+}
+  
+
+#alertmessage p{
+  color: red;
+  margin-right: 8%;
+  float: right;
+}
+
+h5{
+  color: orange;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 20px;
+}
