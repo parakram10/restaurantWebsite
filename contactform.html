@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -57,4 +57,110 @@
     
   </section>
   <script src="js/form.js"></script>
-</body> 
+</body> -->
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Nanum+Pen+Script&family=Rancho&family=Henny+Penny&family=Kaushan+Script&display=swap"
+    rel="stylesheet">
+  <style>
+    .frm {
+      margin: 0% 20% 0% 20%;
+    }
+
+    input.ng-invalid.ng-dirty {
+      border: 2px solid red;
+    }
+
+    input.ng-invalid.ng-dirty {
+      border: 2px solid red;
+    }
+
+    span {
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="contact-section1">
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          Resto</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html#ABOUT">About</a></li>
+          <li><a href="index.html#MENU">Menu</a></li>
+          <li><a href="index.html#book">Reservations</a></li>
+          <li><a href="index.html#feedBack">FeedBack</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="container1">
+        <h2>Login</h2>
+        <form name="frm" class="frm">
+          <div>
+            <input type="text" placeholder="First Name" name="fname" ng-model="fname" required>
+            <span ng-show="frm.fname.$dirty && frm.fname.$error.required">Required!</span>
+          </div>
+          <div>
+            <input type="text" placeholder="Last Name" name="lname">
+          </div>
+          <div>
+            <input type="email" placeholder="Email" name="email" ng-model="user.email" required>
+            <span ng-show="frm.email.$dirty && frm.email.$error.required">Required!</span>
+            <span ng-show="frm.email.$dirty && frm.email.$error.email">Not an email!</span>
+          </div>
+          <div>
+            <input type="password" placeholder="Password" name="password" ng-model="user.password" required
+              ng-minlength="5" ng-maxlength="10">
+            <span ng-show="frm.password.$dirty && frm.password.$error.required">Required!</span>
+            <span ng-show="frm.password.$dirty && frm.password.$error.minlength">Too Short!!</span>
+            <span ng-show="frm.password.$dirty && frm.password.$error.maxlength">Too Long!!</span>
+          </div>
+  
+  
+          <button class="submit" onclick="submitForm()" ng-disabled="frm.$invalid">Login On</button>
+          <p class="or">OR</p>
+          <div class="footer1">
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+          <hr>
+        
+        </form>
+        <div class="signup"><a href="signup.html">Already having account (Click here)</a></div>
+      </div>
+    </div>
+  
+  </section>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script>
+  
+    function submitForm(){
+      location.href = "index.html";
+    }
+  </script>
+</body>
+
+</html>

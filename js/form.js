@@ -5,49 +5,49 @@ function changeform(){
 
 
 
-let name = document.getElementById("input1");
-let lname = document.getElementById("input2");
+// let name = document.getElementById("input1");
+// let lname = document.getElementById("input2");
 let email = document.getElementById("input3");
 let password = document.getElementById("input4");
 
 
-function func(){
-    let alert123 = document.getElementById('alertmessage');
+// function func(){
+//     let alert123 = document.getElementById('alertmessage');
 
-    if(name.value == null || name.value == ""){
-        alert123.innerHTML = `<p>**Please enter user's name!</p>`;
-    }
+//     if(name.value == null || name.value == ""){
+//         alert123.innerHTML = `<p>**Please enter user's name!</p>`;
+//     }
     
-    else if(email.value == null || email.value == ""){
-        alert123.innerHTML = `<p>**Email field should not be empty!</p>`;
-    }
+//     else if(email.value == null || email.value == ""){
+//         alert123.innerHTML = `<p>**Email field should not be empty!</p>`;
+//     }
     
-    else if(email.value == null || email.value == ""){ 
-        alert123.innerHTML = `<p>**Please enter email!</p>`;
-    }
+//     else if(email.value == null || email.value == ""){ 
+//         alert123.innerHTML = `<p>**Please enter email!</p>`;
+//     }
     
-    else if(!validateEmail(email.value)){
-        alert123.innerHTML = `<p>**Please enter a valid email address!</p>`;
-    }
+//     else if(!validateEmail(email.value)){
+//         alert123.innerHTML = `<p>**Please enter a valid email address!</p>`;
+//     }
 
-    else if(password.value == null || password.value == ""){
-        alert123.innerHTML = `<p>**Password field should not be empty!</p>`;
-    }
+//     else if(password.value == null || password.value == ""){
+//         alert123.innerHTML = `<p>**Password field should not be empty!</p>`;
+//     }
 
 
-    else if(!testString(password.value)){
-        alert123.innerHTML = `<p>**Please enter a valid password!</p>`;
-    }
+//     else if(!testString(password.value)){
+//         alert123.innerHTML = `<p>**Please enter a valid password!</p>`;
+//     }
     
-    else{
-        location.href = "index.html";
-    }
+//     else{
+//         location.href = "index.html";
+//     }
 
-    setTimeout(() => {
-        alert123.innerHTML = `<p><p>`
-    }, 1500);
+//     setTimeout(() => {
+//         alert123.innerHTML = `<p><p>`
+//     }, 1500);
  
-}
+// }
 
 
 function func12(){
